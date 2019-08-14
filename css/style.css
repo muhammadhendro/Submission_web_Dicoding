@@ -1,0 +1,535 @@
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**s
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font: 16px/28px arial, sans-serif;
+    background-color: #eaeaea;
+    background-image: url(../img/wheat.png);
+    color: #333;
+
+
+}
+
+.topbar {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-color: black;
+    border-bottom: 3px solid salmon;
+    z-index: 9999;
+}
+
+.topbar ul li {
+    display: inline-block;
+    margin-top: 8px;
+    padding-right: 20px;
+}
+
+.topbar a {
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+
+}
+
+.topbar a:hover {
+    background-color: whitesmoke;
+    color: black;
+
+}
+
+
+
+.container {
+    width: 960px;
+    margin: 80px auto;
+    background-color: #fff;
+    position: relative;
+
+
+
+}
+
+
+
+.header {
+    background-image: url(../img/diagonal-squares.png);
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.header .judul {
+
+
+
+
+
+    font-family: 'Roboto Mono', monospace;
+
+
+    color: lightcoral;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header ul li {
+    display: inline-block;
+
+    margin-right: 10px;
+}
+
+
+
+.header a {
+    text-decoration: none;
+    color: skyblue;
+    padding: 3px;
+
+}
+
+.header a:hover {
+    background-color: lightskyblue;
+    color: salmon;
+
+}
+
+.jumbotron {
+
+    height: 280px;
+
+    background-image: url(../img/bg2.jpg);
+    background-size: cover;
+    background-position: 0 -120px;
+    border-bottom: 5px solid lightskyblue;
+    border-top: 5px solid lightcoral;
+}
+
+
+
+.main {
+    text-align: justify;
+    margin: 20px;
+
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.main h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.main .penulis {
+
+    text-align: center;
+    font-size: 11px;
+    margin-top: -5px;
+}
+
+.main .penulis a {
+
+    color: salmon;
+    text-decoration: none;
+}
+
+.content .dicoding {
+    opacity: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    transform: translate(50px, 0) rotate(-15deg);
+    transition: 2s;
+}
+
+.content .dicoding.muncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+
+/* .sidebar {
+
+    text-align: center;
+
+    padding: 20px;
+} */
+
+
+.main h3 {
+    font-weight: bold;
+    color: #666;
+}
+
+.main p {
+    /* font: 12px/18px arial; */
+    font-weight: bold;
+
+}
+
+.main img {
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-left: 20px;
+
+    width: 120px;
+    height: 160px;
+    float: left;
+
+    border-radius: 50%;
+}
+
+hr {
+    width: 300px;
+    border-top: 3px solid #999
+}
+
+.profil {
+
+    border-top: 5px solid darkblue;
+    border-bottom: 5px solid darkmagenta;
+    text-align: center;
+
+    background-color: rgb(154, 159, 163);
+
+}
+
+
+
+.profil h3 {
+
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.profil h5 {
+
+
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.profilimg {
+    margin-top: 20px;
+    width: 25%;
+
+    border-radius: 50%;
+    border: 10px solid gray;
+    box-shadow: 5px 5px 4px #888888;
+}
+
+
+.profil .isi {
+    border-top: 5px solid darkred;
+    background-color: lightgrey;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+
+}
+
+
+.profil .info {
+
+    background-color: lightgray;
+
+
+
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+
+}
+
+.profil .socmed {
+
+    background-color: lightgray;
+}
+
+
+.socmed h3 {
+
+    padding-top: 30px;
+}
+
+.socmed img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid gray;
+}
+
+.portfolio {
+    border-top: 5px solid darkblue;
+    border-bottom: 5px solid darkmagenta;
+    background-color: lightslategray;
+
+
+
+}
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+}
+
+
+
+.grid-container img {
+
+    width: 100%;
+    height: auto;
+
+}
+
+.location-listing {
+
+    position: relative;
+    overflow: hidden;
+}
+
+@media (hover: none) {
+    .location-title {
+        opacity: 1;
+    }
+
+    .location-image img {
+        filter: blur(2px);
+    }
+}
+
+.location-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(90, 0, 10, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(90, 0, 10, 0.4);
+
+    /* typographic styles */
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+
+    /* position the text centrally*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.location-image {
+    line-height: 0;
+}
+
+.location-listing:hover .location-title {
+    opacity: 1;
+}
+
+
+
+
+
+
+.footer {
+
+
+    background-color: #333;
+    padding: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: skyblue;
+    padding: 3px;
+
+}
+
+.footer .copyright {
+    color: #eaeaea;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+.wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    font-weight: bold;
+
+
+}
